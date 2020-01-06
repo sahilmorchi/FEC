@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hhsfbla.fec.view.ScheduleReportController">
+   <children>
+      <SplitPane orientation="VERTICAL" prefHeight="800.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="table" layoutX="-6.0" prefHeight="599.0" prefWidth="608.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="numberColumn" prefWidth="81.99996948242188" text="No." />
+                        <TableColumn fx:id="lNameColumn" prefWidth="107.0" text="Last " />
+                        <TableColumn fx:id="fNameColumn" prefWidth="119.0" text="First" />
+                        <TableColumn fx:id="workShiftStartColumn" prefWidth="152.0" text="Shift Start" />
+                        <TableColumn fx:id="workShiftEndColumn" prefWidth="132.0" text="Shift End" />
+                        <TableColumn fx:id="dayColumn" prefWidth="193.0" text="Day" />
+                    </columns>
+                  </TableView>
+                  <ButtonBar layoutX="-13.0" layoutY="550.0" prefHeight="49.0" prefWidth="608.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="550.0">
+                    <buttons>
+                        <Button mnemonicParsing="false" onAction="#handlePrint" prefHeight="32.0" prefWidth="114.0" styleClass="print" text="Print" />
+                        <Button mnemonicParsing="false" onAction="#handleExport" prefHeight="32.0" styleClass="download" text="Export to .xls..." />
+                        <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="32.0" prefWidth="588.0" styleClass="cancel" text="Close" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

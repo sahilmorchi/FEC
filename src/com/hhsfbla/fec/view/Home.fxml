@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hhsfbla.fec.view.HomeController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#65d8ff" height="200.0" layoutX="70.0" layoutY="121.0" onMousePressed="#handleEmployeePage" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="175.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="175.0" onMousePressed="#handleEmployeePage" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="200.0">
+         <image>
+            <Image url="@../../../../../resources/images/affiliates.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#65d8ff" height="200.0" layoutX="385.0" layoutY="150.0" onMousePressed="#handleCustomerPage" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="175.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="425.0" layoutY="175.0" onMousePressed="#handleCustomerPage" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="200.0">
+         <image>
+            <Image url="@../../../../../resources/images/customer2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="397.0" layoutX="220.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="445.1840362548828" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../../../../../resources/images/NeonNights.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="354.0" layoutX="220.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="404.3680725097656" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="126.137939453125" AnchorPane.topAnchor="92.81596374511719">
+         <image>
+            <Image url="@../../../../../resources/images/FEC.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="375.0" prefHeight="17.0" prefWidth="181.0" text="           Employees" textAlignment="CENTER" AnchorPane.leftAnchor="109.0" />
+      <Label layoutX="420.0" layoutY="375.0" prefHeight="17.0" prefWidth="181.0" text="            Customers" textAlignment="CENTER" AnchorPane.rightAnchor="109.0" />
+   </children>
+</AnchorPane>

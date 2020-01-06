@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hhsfbla.fec.view.RootLayoutController">
+   <top>
+      <MenuBar prefWidth="766.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Save As" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleHome" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSwitch" text="Customer Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSwitchEmployee" text="Employee Information" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleHelp" text="How to Use" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
